@@ -2,7 +2,7 @@
 const {MongoClient, ServerApiVersion} = require('mongodb');
 
 
-const {uri} = require('./secrets.js');
+const {uri} = require('./dbsecrets.js');
 //connect to Mongo/Atlas USING a URL Connection String 
 const client = new MongoClient( uri, {useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1});
 
